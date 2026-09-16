@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+* {
+    /*removendo as margens da página */
+    margin: 0;
+
+    /*removendo os espaçamentos*/
+    padding: 0;
+
+    /*define como o navegador deve calcular a largura e altura total de elemento*/
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/*Vamos criar variaveis no css
+Neste caso, vamos criar a paleta de cores padrão do site, isso facilita trocar a identidade visual do site */
+:root {
+    --preto: #1c1c1e;
+    /* Variação da cor preta */
+    --preto-suave: #2b2b2f;
+    /* Cor de destaque, similar a cor do carro*/
+    --vermelho: #d62828;
+    /*tom de vermelho usado no hover */
+    --vermelho-escuro: #a11d1d;
+    /*fondo geral da página*/
+    --bege: #f7f5f2;
+    --branco: #ffffff;
+    /*textos secundários */
+    --cinza: #6b7280;
+    /* utilizadas para bordas e divisoes*/
+    --cinza-claro: #abd8ce;
+    /* sombra padrão- usadas nos cards */
+    --sombra: 0 10px 25px rgba(0, 0, 0, 0.08)
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /*impede a barra de rolagem horizontal*/
+    background-color: var(--bege);
+    color: var(--preto);
+    scroll-behavior: smooth; /*rolagem suave ao clicar em links com o #*/
+}
+
+.conteudo { 
+    min-width: 300px;
+    margin: 0 auto; /*margem automática dos dois lados do conteúdo, ou seja, centraliza*/
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(160deg, var(--preto) 0%, var(--preto-suave) 100%);
+/* mudando a cor do texto do header*/
+    color: var(--branco);
+    padding-bottom: 60px;
+}
+
+/*Barra de nevegação */
+nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-family: 'Popins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #e0e0e0;
+    /*serve para deixar com a mão para clicar*/
+    cursor: pointer;
+}
+
+#car {
+    font-size: 1.37em;
+    font-weight: bold;
+    color: var(--vermelho);
+}
+
+#the {
+    font-size: 1.37em;
+    font-weight: bold;
+    color: var(--branco);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* remover as bolinha dos itens da lista */
+    list-style: none;
+}
+
+nav li {
+    padding: 20px;
+    list-style-type: none;
+}
