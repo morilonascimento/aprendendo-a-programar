@@ -131,3 +131,195 @@ nav li a:hover {
     border-color: var(--vermelho);
     color: var(--branco);
 }
+
+/* Bloco de destaque (texto + imagem do carro) */
+.header-block {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px 10px;
+}
+
+.header-block .tag {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-size: .75em;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 100px;
+}
+
+.header-block .text {
+    max-width: 480px;
+
+}
+
+.header-block .text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.63em;
+    line-height: 1.15;
+    color: var(--branco);
+    margin-bottom: 18px;
+}
+
+.header-block .text p {
+    color: var(--cinza-claro);
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.header-block .imagem {
+    /*impede que a imagem encolha para caber o texto */
+    flex-shrink: 0;
+    width: 480px;
+    max-width: 45%;
+}
+.btn-cta {
+    display: inline-block;
+    background-color: var(--vermelho);
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1em;
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: backgrond-color 0.3s ease, transform 0.02 ease;
+} 
+
+.btn-cta:hover {
+    background-color: var(--vermelho-escuro);
+    transform: translateY(-2px);
+}
+
+.header-block .imagem img {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+    box-shadow: var(--sombra);
+
+}
+
+/* seção de catálogo */
+.catalogo {
+    width: 100%;
+    padding: 80px 0 60px 0;
+}
+
+.catalogo h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 6px; 
+}
+
+.catalogo .subtitulo {
+    color: var(--cinza);
+    margin-bottom: 30px;
+}
+
+/* barra de busca */
+.busca-texto {
+    /* removendo o espaço entre o filtro de busca e o botão */
+    flex: 1;
+    height: 52px;
+    /* arredondando as bordas esquerda inferior e superior */
+    border-radius: 100px 0 0 100px;
+    /* coloca o foco do input 16px para frente */
+    text-indent: 16px;
+    border: 1px solid var(--cinza-claro);
+    border-right: none;
+    background-color: var(--branco);
+    font-size: .9em;
+}
+
+.filtro-busca {
+    display: flex;
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+
+.busca-texto::placeholder {
+    color: var(--cinza);
+}
+
+.busca-botao {
+    width: 150px;
+    height: 52px;
+    border: none;
+    border-radius: 0 100px 100px 0;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-size: .9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: backgrand-color 0.3s ease;
+}
+
+.busca-botao:hover {
+    background-color: var(--vermelho-escuro);
+}
+
+/* vamos construir nossos cards dos carrinho  */
+
+.grade-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background-color: var(--branco);
+    border-radius: 14px;
+    padding: 28px 24px;
+    box-shadow: var(--sombra);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(6px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card .card-imagem {
+    font-size: 3.12em;
+    margin-bottom: 16px;
+}
+
+.card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: var(--cinza);
+    font-size: .87em;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.card .preco {
+    display: inline-block;
+    font-weight: bold;
+    color: var(--vermelho);
+}
+
+footer {
+    width: 100%;
+    background-color: var(--preto);
+    color: var(--cinza-claro);
+    padding: 24px 0;
+}
+
+.rodape-conteudo {
+    align-items: center;
+    text-align: center;
+    font-size: .87em;
+}
