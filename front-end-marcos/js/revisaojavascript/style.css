@@ -55,19 +55,19 @@ button {
 }
 
 #btn-diminuir{
-    background-color: #2563eb;
+    background-color: #ef4444;
     color: white;
 }
 
 #btn-diminuir:hover{
-    background-color: #748ccd;
+    background-color: #e85a5a;
 }
 
 #btn-resetar{
-    background-color: #2563eb;
+    background-color: #6b7280;
     color: white;
 }
 
 #btn-resetar:hover{
-    background-color: #748ccd;
+    background-color: #4b5563;
 }
