@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte do Google-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap">
+</head>
+<body>
+    <!-- Cabeçalho do site-->
+    <header>
+        <div class="conteudo">
+            <!-- Barra de navegação-->
+            <nav>
+                <p class="brand"><strong>The Car</strong> Loja de Carros</p>
+                <!-- lista dos itens da barra d navegação-->
+                 <ul>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#patrocinio">Patrocínio</a></li>
+                    <li><a href="formulario.html">Cadastro </a></li>
+                    <li><button class="btn-login">Login</button></li>
+                 </ul>
+            </nav>
+
+            <!-- Bloco de destaque: texto + imagem lado a lado -->
+             <div class="header-block">
+                <samp class="tag">Mobilidade Elétrica</samp>
+
+                <!-- Parte do texto -->
+                <div class="text">
+                    <h1> A empresa certa para você!</h1>
+                    <p>Encontre o veículo ideal para o seu dia a dia. Modelos modernos, econômicos e com tecnologia que você precisa para rodar com segurança </p>
+
+                    <!-- botão para ver cátalogo -->
+                     <a href="#catalogo" class="btn-cta">Ver Catálogo</a>
+                </div>
+
+                <!-- Imagem do carro-->
+                <div class="imagem">
+                    <img src="../images/carro.jpg" alt="Foto de um carro elétrico vermelho visto de trás em estúdio">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO CATÁLOGO 
+    id="catalogo" -> usada pelo link do menu (#catalogo)
+    class="catalogo" -> usanda pelo CSS para estilizar -->
+
+    <section class="catalogo" id="catalogo">
+        <div class="conteudo">
+            <h2>Catálogo</h2>
+            <p class="subtitulo">Encontre o que você precisa </p>
+
+            <!-- Barra de busca -->
+
+            <div class="filtro-busca">
+                <input type="text" class="busca-texto" placeholder="Digite sua busca...">
+                <button class="busca-botao">Procurar</button>
+            </div>
+
+            <!-- Grade de cartões com exemplos de veículos
+             Cada card é um cartão independente-->
+            <div class="grade-catalogo">
+                <!-- aqui vou criar os cards de cada carro -->
+                <div class="card">
+                    <div class="card-imagem">🚗</div>
+                    <h3>Modelo Urbano</h3>
+                    <p>Compacto, ágil, ideal para o trânsito na cidade.</p>
+                    <span class="preco">R$ 89.900,00</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-imagem">🚙</div>
+                    <h3>Modelo Família</h3>
+                    <p>Mais espaço  interno e porta-malas para o dia a dia.</p>
+                    <span class="preco">R$ 112.500,00</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-imagem">🏎️</div>
+                    <h3>Modelo Esportivo</h3>
+                    <p>Performmance e design arrojado para quem gosta de estilo.</p>
+                    <span class="preco">R$ 350.000,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rodapé do nosso site-->
+<footer>
+    <div class="rodape-conteudo">
+        <p>2026 The Cars Software | Projeto didático de HTML e CSS</p>
+        
+    </div>
+</footer>
+
+</body>
+</html>
